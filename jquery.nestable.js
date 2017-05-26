@@ -48,6 +48,28 @@
         allowIncrease   : true
     };
 =======
+            listNodeName    : 'ol',
+            itemNodeName    : 'li',
+            rootClass       : 'dd',
+            listClass       : 'dd-list',
+            itemClass       : 'dd-item',
+            dragClass       : 'dd-dragel',
+            handleClass     : 'dd-handle',
+            collapsedClass  : 'dd-collapsed',
+            placeClass      : 'dd-placeholder',
+            noDragClass     : 'dd-nodrag',
+            emptyClass      : 'dd-empty',
+            expandBtnHTML   : '<button data-action="expand" type="button">Expand</button>',
+            collapseBtnHTML : '<button data-action="collapse" type="button">Collapse</button>',
+            group           : 0,
+            maxDepth        : 5,
+            threshold       : 20,
+
+            //method for call when an item has been successfully dropped
+            //method has 1 argument in which sends an object containing all
+            //necessary details
+            dropCallback    : null
+        };
 >>>>>>> pr/2
 
     function Plugin(element, options)
